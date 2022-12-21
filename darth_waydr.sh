@@ -16,8 +16,8 @@ echo -e "install waydroid on debain-based distributions\n"
 echo -e "\nprerequisites"
 
 # check distro
-supported_distros=" focal bullseye hirsute "
-fallback_distro="bullseye"
+supported_distros=" focal bullseye hirsute jammy "
+fallback_distro="jammy"
 distro=$(lsb_release -sc)
 
 if [[ "$supported_distros" != *" $distro "* ]]; then
